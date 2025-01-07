@@ -1,0 +1,58 @@
+
+.derecha{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+    animation: move 7s ease-in-out;
+    display: flex;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 15px;
+    width: 50%;
+    height: calc(100vh / 2vh);
+}
+@media screen and (max-width: 1580px){
+    .form-group input{
+        width: 40vh;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 1500px){
+    .form-group input{
+        width: 30vh;
+        margin-left: 10px;
+    }
+    .derecha{
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+    }
+    .formulario{
+        background-color: rgb(255, 255, 255);
+        width: 80%;
+        height: calc(100vh / 2vh);
+    }
+}
+@media screen and (max-width: 1200px){
+
+}
+.move{
+    display: flex;
+    animation: move .8s ease-in-out;
+}
+@keyframes move{
+    0%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

@@ -1,0 +1,20 @@
+@media screen and (max-width: 741px){
+    .derecha{
+        position: fixed;
+    }
+    .izquierda h1{
+            color: rgb(255, 255, 255);
+            font-size: 40px;
+            padding: 60px;
+            text-transform: uppercase;
+
+    }
+    .formulario{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .textAlignForm::placeholder{
+        text-align: center;
+    }
+}
